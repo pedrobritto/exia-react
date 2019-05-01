@@ -2,6 +2,8 @@
   "name": "exia-react",
   "version": "0.1.0",
   "private": true,
+  "author": "Pedro Britto",
+  "license": "MIT",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
