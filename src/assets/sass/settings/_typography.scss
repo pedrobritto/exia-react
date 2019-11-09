@@ -28,13 +28,13 @@ $margin-heading-is-proportional: true;
 $margin-p-is-proportional: true;
 
 @if $margin-heading-is-proportional {
-    $margin-heading: 0 0 0.6em !global;
+  $margin-heading: 0 0 0.6em !global;
 } @else {
-    $margin-heading: 0 0 1rem !global;
+  $margin-heading: 0 0 1rem !global;
 }
 
 @if $margin-p-is-proportional {
-    $margin-p: 0 0 1em !global;
+  $margin-p: 0 0 1em !global;
 } @else {
-    $margin-p: 0 0 1rem !global;
+  $margin-p: 0 0 1rem !global;
 }

@@ -3,9 +3,9 @@
 // @param {Number} $value Número em
 
 @function round-pixel($value) {
-    @if unit($value) == "px" {
-        @return round($value);
-    }
+  @if unit($value) == "px" {
+    @return round($value);
+  }
 
-    @return $value;
+  @return $value;
 }

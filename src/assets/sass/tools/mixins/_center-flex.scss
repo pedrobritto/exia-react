@@ -7,18 +7,18 @@
 //      }
 
 @mixin center-flex($position: null) {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 
-    @if $position == "vertical" {
-        align-items: center;
-    } @else if $position == "horizontal" {
-        justify-content: center;
-    } @else {
-        align-items: center;
-        justify-content: center;
-    }
+  @if $position == "vertical" {
+    align-items: center;
+  } @else if $position == "horizontal" {
+    justify-content: center;
+  } @else {
+    align-items: center;
+    justify-content: center;
+  }
 }

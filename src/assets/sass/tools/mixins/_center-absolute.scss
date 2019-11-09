@@ -13,16 +13,16 @@
 // @source https://medium.com/@justinbrazeau/10-useful-sass-mixins-for-automation-833cdee9d69b
 
 @mixin center-absolute($position: null) {
-    position: absolute;
-    @if $position== "vertical" {
-        top: 50%;
-        transform: translateY(-50%);
-    } @else if $position== "horizontal" {
-        left: 50%;
-        transform: translate(-50%);
-    } @else {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+  position: absolute;
+  @if $position== "vertical" {
+    top: 50%;
+    transform: translateY(-50%);
+  } @else if $position== "horizontal" {
+    left: 50%;
+    transform: translate(-50%);
+  } @else {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

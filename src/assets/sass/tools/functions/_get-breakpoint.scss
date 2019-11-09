@@ -1,7 +1,7 @@
 @function get-bp($breakpoint-name) {
-    @if map-has-key($breakpoints, $breakpoint-name) {
-        @return map-get($breakpoints, $breakpoint-name);
-    } @else {
-        @error 'O breakpoint ' + $color-name + ' não existe no map $breakpoints.';
-    }
+  @if map-has-key($breakpoints, $breakpoint-name) {
+    @return map-get($breakpoints, $breakpoint-name);
+  } @else {
+    @error 'O breakpoint ' + $color-name + ' não existe no map $breakpoints.';
+  }
 }

@@ -20,55 +20,55 @@ $tab-body-is-bordered: true;
 // .k-tab-container {}
 
 .tab-header {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .tab-header-item {
-    margin-top: 0.5rem;
-    margin-right: $tab-header-item-spacing;
-    padding: $tab-header-item-padding;
-    border-radius: $tab-border-radius $tab-border-radius 0 0;
+  margin-top: 0.5rem;
+  margin-right: $tab-header-item-spacing;
+  padding: $tab-header-item-padding;
+  border-radius: $tab-border-radius $tab-border-radius 0 0;
 
-    background-color: $tab-neutral-color;
-    color: $tab-header-color;
-    font-size: $tab-header-font-size;
-    transition: $transition-timing-default;
+  background-color: $tab-neutral-color;
+  color: $tab-header-color;
+  font-size: $tab-header-font-size;
+  transition: $transition-timing-default;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    &:last-of-type {
-        margin-right: 0;
-    }
+  &:last-of-type {
+    margin-right: 0;
+  }
 
-    &:hover {
-        background-color: mix($tab-active-color, $tab-neutral-color, 60%);
-    }
+  &:hover {
+    background-color: mix($tab-active-color, $tab-neutral-color, 60%);
+  }
 
-    &.is-active {
-        background-color: $tab-active-color;
-    }
+  &.is-active {
+    background-color: $tab-active-color;
+  }
 }
 
 .tab-content {
-    padding: 1.5rem;
-    position: relative;
-    top: -0.1rem;
+  padding: 1.5rem;
+  position: relative;
+  top: -0.1rem;
 
-    @include media(800px) {
-        padding: 2rem;
-    }
+  @include media(800px) {
+    padding: 2rem;
+  }
 
-    @if $tab-body-is-bordered {
-        border: 0.1rem solid $tab-active-color;
-        border-radius: 0 $tab-border-radius $tab-border-radius $tab-border-radius;
-    }
+  @if $tab-body-is-bordered {
+    border: 0.1rem solid $tab-active-color;
+    border-radius: 0 $tab-border-radius $tab-border-radius $tab-border-radius;
+  }
 }
 
 .tab-content-item[data-tab-id] {
-    display: none;
+  display: none;
 
-    &.is-active {
-        display: block;
-    }
+  &.is-active {
+    display: block;
+  }
 }

@@ -38,240 +38,239 @@ $form-select-arrow-dark: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAH
 
 // Estilos
 .label {
-    font-size: $form-label-size;
-    line-height: 1;
-    display: inline-block;
-    margin-bottom: 0.8rem;
+  font-size: $form-label-size;
+  line-height: 1;
+  display: inline-block;
+  margin-bottom: 0.8rem;
 }
 
 .form-instructions {
-    display: block;
-    margin-top: 0.5rem;
-    color: #888;
+  display: block;
+  margin-top: 0.5rem;
+  color: #888;
 }
 
 .form-control::placeholder {
-    color: $form-placeholder-color;
-    font-size: 1.4rem;
+  color: $form-placeholder-color;
+  font-size: 1.4rem;
 }
 
 .form-control {
-    display: block;
-    color: inherit;
-    background-color: $form-input-background-color;
-    appearance: none;
-    border: $form-input-border;
+  display: block;
+  color: inherit;
+  background-color: $form-input-background-color;
+  appearance: none;
+  border: $form-input-border;
 
-    @if $form-input-is-round {
-        border-radius: $form-input-border-radius;
-    }
+  @if $form-input-is-round {
+    border-radius: $form-input-border-radius;
+  }
 
-    padding: $form-input-padding;
-    font-family: inherit;
-    font-size: $form-input-font-size;
-    line-height: 1.2;
-    width: 100%;
-    min-height: $form-input-field-height;
-    transition: 0.2s;
+  padding: $form-input-padding;
+  font-family: inherit;
+  font-size: $form-input-font-size;
+  line-height: 1.2;
+  width: 100%;
+  min-height: $form-input-field-height;
+  transition: 0.2s;
 
-    // States
-    &:hover {
-        border-color: $form-input-border-hover-color;
-    }
+  // States
+  &:hover {
+    border-color: $form-input-border-hover-color;
+  }
 
-    &:focus {
-        border-color: $form-input-border-focus-color;
-        outline: none;
-        box-shadow: 0 0 0 $form-input-border-focus-outline-width
-            $form-input-border-focus-outline-color;
-    }
+  &:focus {
+    border-color: $form-input-border-focus-color;
+    outline: none;
+    box-shadow: 0 0 0 $form-input-border-focus-outline-width $form-input-border-focus-outline-color;
+  }
 
-    &[disabled],
-    &[readonly] {
-        background-color: $form-input-disabled-background-color;
-        color: $form-input-disabled-color;
-        border: $form-input-disabled-border;
-    }
+  &[disabled],
+  &[readonly] {
+    background-color: $form-input-disabled-background-color;
+    color: $form-input-disabled-color;
+    border: $form-input-disabled-border;
+  }
 
-    & + & {
-        margin-top: 1rem;
-    }
+  & + & {
+    margin-top: 1rem;
+  }
 }
 
 textarea.form-control {
-    height: unset;
-    resize: vertical;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    line-height: 1.4;
+  height: unset;
+  resize: vertical;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  line-height: 1.4;
 }
 
 select.form-control {
-    background-image: url($form-select-arrow-dark);
-    background-position: right 1rem center;
-    background-repeat: no-repeat;
+  background-image: url($form-select-arrow-dark);
+  background-position: right 1rem center;
+  background-repeat: no-repeat;
 }
 
 select.select-arrow-light {
-    background-image: url($form-select-arrow-light);
+  background-image: url($form-select-arrow-light);
 }
 
 select.select-arrow-dark {
-    background-image: url($form-select-arrow-dark);
+  background-image: url($form-select-arrow-dark);
 }
 
 // =====
 // Sizes
 // =====
 .form-control.small {
-    padding: $form-input-padding-small;
-    font-size: $form-input-font-size-small;
-    border-radius: $form-input-border-radius-small;
+  padding: $form-input-padding-small;
+  font-size: $form-input-font-size-small;
+  border-radius: $form-input-border-radius-small;
 }
 
 .form-control.big {
-    padding: $form-input-padding-big;
-    font-size: $form-input-font-size-big;
-    border-radius: $form-input-border-radius-big;
+  padding: $form-input-padding-big;
+  font-size: $form-input-font-size-big;
+  border-radius: $form-input-border-radius-big;
 }
 
 // ==========
 // Form group
 // ==========
 .form-group {
-    position: relative;
-    margin-bottom: 4rem;
-    width: 100%;
+  position: relative;
+  margin-bottom: 4rem;
+  width: 100%;
 }
 
 .input-icon {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 
-    &.left {
-        .input-icon__icon-container {
-            left: 0;
-        }
-
-        .form-control {
-            padding-left: 3.5rem;
-
-            @include media(800px) {
-                padding-left: 3.8rem;
-            }
-        }
-    }
-
-    &.right {
-        .input-icon__icon-container {
-            right: 0;
-        }
-
-        .form-control {
-            padding-right: 3.5rem;
-
-            @include media(800px) {
-                padding-right: 3.8rem;
-            }
-        }
-    }
-
+  &.left {
     .input-icon__icon-container {
-        position: absolute;
-        height: 100%;
-        text-align: center;
-        top: 0;
-        width: 3.5rem;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: get-color(text-muted);
-
-        font-size: 1.6rem;
-
-        @include media(800px) {
-            width: 4rem;
-        }
+      left: 0;
     }
+
+    .form-control {
+      padding-left: 3.5rem;
+
+      @include media(800px) {
+        padding-left: 3.8rem;
+      }
+    }
+  }
+
+  &.right {
+    .input-icon__icon-container {
+      right: 0;
+    }
+
+    .form-control {
+      padding-right: 3.5rem;
+
+      @include media(800px) {
+        padding-right: 3.8rem;
+      }
+    }
+  }
+
+  .input-icon__icon-container {
+    position: absolute;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    width: 3.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: get-color(text-muted);
+
+    font-size: 1.6rem;
+
+    @include media(800px) {
+      width: 4rem;
+    }
+  }
 }
 
 // * input group *****
 
 .input-group {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .input-group-append {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .input-description {
-    position: absolute;
-    font-size: 1.3rem;
-    color: #888;
+  position: absolute;
+  font-size: 1.3rem;
+  color: #888;
 }
 
 .custom-file-label {
-    border: 2px solid get-color(primary);
-    height: 5rem;
-    padding: 0 2rem;
+  border: 2px solid get-color(primary);
+  height: 5rem;
+  padding: 0 2rem;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    text-transform: uppercase;
-    font-size: 1.4rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
 
-    cursor: pointer;
-    transition: 0.2s;
+  cursor: pointer;
+  transition: 0.2s;
 
-    &:hover {
-        background-color: get-color(primary);
-    }
+  &:hover {
+    background-color: get-color(primary);
+  }
 
-    & + input[type="file"] {
-        height: 0.1px;
-        width: 0.1px;
-        position: absolute;
-        left: -9999999px;
-        opacity: 0;
-    }
+  & + input[type="file"] {
+    height: 0.1px;
+    width: 0.1px;
+    position: absolute;
+    left: -9999999px;
+    opacity: 0;
+  }
 }
 
 .input-occurrence-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    .label {
-        width: 12rem;
-        flex: none;
-        padding-right: 2rem;
-        font-size: 1.4rem;
-        margin-bottom: 0;
-    }
-    &.error {
-        margin-bottom: -1.2rem
-    }
+  .label {
+    width: 12rem;
+    flex: none;
+    padding-right: 2rem;
+    font-size: 1.4rem;
+    margin-bottom: 0;
+  }
+  &.error {
+    margin-bottom: -1.2rem;
+  }
 }
 
 .msg-erro {
-    color: #B10222;
-    font-size: 12px;
-    letter-spacing: 2px;
-    font-weight: bold;
-    margin-top: 5px;
+  color: #b10222;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-top: 5px;
 }
 
 .file {
-    color: get-color(primary);
-    text-decoration: underline;
-    font-size: 12px;
-    letter-spacing: 2px;
-    font-weight: bold;
-    margin-top: 5px;
+  color: get-color(primary);
+  text-decoration: underline;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-top: 5px;
 }

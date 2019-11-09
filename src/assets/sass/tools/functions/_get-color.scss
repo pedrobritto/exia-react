@@ -1,7 +1,7 @@
 @function get-color($color-name) {
-    @if map-has-key($colors, $color-name) {
-        @return map-get($colors, $color-name);
-    } @else {
-        @error 'A cor ' + $color-name + ' não existe no map $colors.';
-    }
+  @if map-has-key($colors, $color-name) {
+    @return map-get($colors, $color-name);
+  } @else {
+    @error 'A cor ' + $color-name + ' não existe no map $colors.';
+  }
 }
