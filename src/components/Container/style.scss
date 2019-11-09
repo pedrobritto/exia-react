@@ -1,0 +1,18 @@
+.container {
+	position: relative;
+	max-width: 75rem + get-spacing(small);
+	width: 100%;
+
+	margin: 0 auto;
+	padding: get-spacing(big) get-spacing(default);
+
+	@include media(980px, max) {
+		max-width: auto;
+		width: 100%;
+		padding: get-spacing(default) get-spacing(default);
+	}
+
+	@include media(768px, max) {
+		padding: get-spacing(default);
+	}
+}

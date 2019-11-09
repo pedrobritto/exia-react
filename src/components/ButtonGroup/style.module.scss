@@ -1,0 +1,32 @@
+.buttonGroup {
+  @include media(500px) {
+    display: flex;
+    margin-left: -6px;
+    margin-right: -6px;
+  }
+
+  .alignLeft {
+    justify-content: flex-start;
+  }
+
+  .alignRight {
+    justify-content: flex-end;
+  }
+
+  .alignCenter {
+    justify-content: center;
+  }
+}
+
+.groupItem {
+  @include media(500px, max) {
+    margin-bottom: 8px;
+    width: 100%;
+  }
+
+  @include media(500px) {
+    flex: 1;
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+}

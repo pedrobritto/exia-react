@@ -1,0 +1,104 @@
+.button {
+  display: inline-block;
+  padding: 8px 14px;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+
+  appearance: none;
+  line-height: 1;
+  border: 2px solid transparent;
+  background-color: transparent;
+
+  border-radius: 3px;
+  transition: 0.2s;
+  cursor: pointer;
+  color: inherit;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+.sizeBig {
+  font-size: 16px;
+}
+
+.sizeSmall {
+  font-size: 12px;
+  padding: 6px 10px;
+}
+
+.sizeTiny {
+  font-size: 12px;
+  padding: 4px 8px;
+}
+
+.block {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.red,
+.secondary {
+  background-color: get-color(secondary);
+  color: #fff;
+}
+
+.blue,
+.tertiary {
+  background-color: get-color(tertiary);
+  color: #fff;
+}
+
+.outline {
+  border: 2px solid;
+
+  &.red,
+  &.secondary {
+    border-color: get-color(secondary);
+    color: get-color(secondary);
+    background-color: #fff;
+
+    &:hover {
+      background-color: get-color(secondary);
+      color: #fff;
+    }
+  }
+
+  &.blue,
+  &.tertiary {
+    border-color: get-color(tertiary);
+    color: get-color(tertiary);
+    background-color: #fff;
+
+    &:hover {
+      background-color: get-color(tertiary);
+      color: #fff;
+    }
+  }
+}
+
+.inline {
+  padding: 0;
+  background-color: transparent;
+  color: get-color(tertiary);
+
+  &.red,
+  &.secondary {
+    color: get-color(secondary);
+  }
+
+  &.blue,
+  &.tertiary {
+    color: get-color(tertiary);
+  }
+}
