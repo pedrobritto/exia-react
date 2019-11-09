@@ -1,0 +1,14 @@
+.Main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.Footer {
+  flex-shrink: 0;
+}
+
+.Content {
+  flex: 1 0 auto;
+}
